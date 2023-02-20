@@ -26,9 +26,7 @@ The calculator language is equally simple; it doesn’t contain any instructions
 for input and only one for output. There are variables that can be assigned to
 and read from, but they are restricted to single letter identifiers that are the
 lower letters from a-z, thus one cannot have more than 26 different variables2.
-1If you are interested in what the other compiler/interpreter versions do, try them out
-or refer to the Lex and Yacc tutorial (”A COMPACT GUIDE TO LEX & YACC” by Tom
-Niemann (http://www.epaperpress.com/lexandyacc/))2This makes handling the symbol table very easy as one can just allocate 26 memory
+This makes handling the symbol table very easy as one can just allocate 26 memory
 positions and index into that array given the single letter identifier (i.e. ’a’ is the first position,
 ’b’ the second, and so on), so when the compiler sees the variable ’b’ it can just store or fetch
 the data at the second position in the array (doesn’t have to be an actual array, labels are
@@ -87,7 +85,7 @@ correct order, subtracts them, and stores the result back into variable ’a’.
 the x86-64 ’sub’ instruction does not take its arguments from the stack and does
 not put its result onto the stack, you will have to add extra instructions to do
 so, when handling the substraction case.
-3http://en.wikipedia.org/wiki/Euclidean_algorithm
+
 2
 The control structure consists of comparison instructions ’compGT’ for ’compare
 greater than’ which sets an invisible true or false flag somewhere in the computer
