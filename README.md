@@ -86,7 +86,7 @@ the x86-64 ’sub’ instruction does not take its arguments from the stack and 
 not put its result onto the stack, you will have to add extra instructions to do
 so, when handling the substraction case.
 
-2
+
 The control structure consists of comparison instructions ’compGT’ for ’compare
 greater than’ which sets an invisible true or false flag somewhere in the computer
 that subsequent ’jz’ - ’jump if zero’ instruction can act on, incidentally the
@@ -98,14 +98,32 @@ to check if the previous comparison instruction returned true or false.
 3.1 Project Structure
 The basic folder structure for your project has to look as follows (you may add
 folders, if necessary):
+
+
 project
+
+
 |----- bin/
+
+
 |----- lexyacc-code/
+
+
 |----- lib/
+
+
 |----- src/
+
+
 |----- c-driver.sh
+
+
 |----- x86-64-driver.sh
+
+
 +----- Makefile
+
+
 The lexyacc-code folder shall contain all source files for your compiler. Basi-
 cally, you can just use the provided folder and add your calc3i.c (and calc3c.c -
 cf. Section 3.5) file. You can either create build artefacts in this folder as well,
