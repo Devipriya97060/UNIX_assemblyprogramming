@@ -97,8 +97,7 @@ project
 +----- Makefile
 
 
-The lexyacc-code folder shall contain all source files for your compiler. Basi-
-cally, you can just use the provided folder and add your calc3i.c (and calc3c.c -
+The lexyacc-code folder shall contain all source files for your compiler. Basically, you can just use the provided folder and add your calc3i.c (and calc3c.c -
 cf. Section 3.5) file. You can either create build artefacts in this folder as well,
 which is not so nice, but permitted, or you could create a dedicated folder for
 the build artefacts.
